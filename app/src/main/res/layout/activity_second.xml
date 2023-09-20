@@ -8,19 +8,17 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        tools:context=".MainActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".SecondActivity">
 
-        <TextView
-            android:id="@+id/textViewWelcome"
-            android:layout_width="40dp"
-            android:layout_height="340dp"
-            android:text="Welcome"
-            android:gravity="center"
-            android:background="@color/white"
-            android:textColor="@color/black"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/songREcycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
